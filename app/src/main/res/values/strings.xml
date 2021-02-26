@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Anonymous</string>
+    <string name="refresh">обновить</string>
+    <string name="down">down</string>
+    <string name="up">up</string>
+    <string name="board">борда</string>
+    <string name="search">поиск</string>
+    <string name="enter_search_msg">Слово для поиска</string>
+    <string name="down_img">down_img</string>
+</resources>
