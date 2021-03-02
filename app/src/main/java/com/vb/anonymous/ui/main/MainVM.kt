@@ -25,7 +25,7 @@ class MainVM(private val boardRepo: BoardRepo) : ViewModel() {
 
     fun getThreadPosts(board: String, threadId: String) = liveData {
         if (boardRepo.getPosts(board, threadId) != null) {
-            emitSource(boardRepo.getPosts(board, threadId)!!.asLiveData(Dispatchers.IO, 20000L))
+            emitSource(boardRepo.getPosts(board, threadId)!!.asLiveData(Dispatchers.IO))
         }
     }
 }

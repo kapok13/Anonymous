@@ -30,7 +30,7 @@ class BoardRepoImpl(private val boardApi: BoardApi) : BoardRepo {
             flow {
                 while (true) {
                     emit(PostsCount(boardApi.getThreadPosts(board, threadId).posts_count))
-                    kotlinx.coroutines.delay(20000)
+                    kotlinx.coroutines.delay(10000)
                 }
             }.flowOn(Dispatchers.IO)
         } catch (e: Exception) {

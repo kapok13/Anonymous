@@ -64,7 +64,7 @@ class MainActivity : AppCompatActivity() {
                     timeForClick = System.currentTimeMillis()
                 val hr = (v as WebView).hitTestResult
                 if (hr.type == 8 && hr.extra != null && event.action == MotionEvent.ACTION_UP
-                    && System.currentTimeMillis() - timeForClick < 300
+                    && System.currentTimeMillis() - timeForClick < 100
                 ) {
                     v.performClick()
                     ResourcesDialog(hr.extra).show(supportFragmentManager, "resDialog")
